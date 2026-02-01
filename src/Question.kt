@@ -1,5 +1,11 @@
 class Question<T>(
     val questionText: String,
     val answer: T,
-    val difficultly: String
+    val difficultly: Difficulty
 )
+
+enum class Difficulty {
+    EASY,
+    MEDIUM,
+    HARD
+}
