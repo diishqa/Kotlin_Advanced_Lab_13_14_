@@ -34,10 +34,34 @@ class Quiz : ProgressPrintable {
         var total: Int=10
         var aswered: Int=3
     }
+    fun printQuiz() {
+        question1.let {
+            println((it.questionText))
+            println(it.answer)
+            println(it.difficultly)
+        }
+        println()
+        question2.let {
+            println((it.questionText))
+            println(it.answer)
+            println(it.difficultly)
+        }
+        println()
+        question3.let {
+            println((it.questionText))
+            println(it.answer)
+            println(it.difficultly)
+        }
+        println()
+    }
+
+
+
 }
 
 fun main() {
-    Quiz().printProgressBar()
+//    Quiz().printProgressBar()
+    Quiz().apply { printQuiz() }
 
 
 
