@@ -1,3 +1,24 @@
 fun main() {
-    println("Hello World!")
+    val question1 = Question<String>(
+        "Речка спятила с ума - По домам пошла сама. ___",
+        "Водопровод",
+        "medium"
+    )
+    val question2 = Question<Boolean>(
+        "Небо зеленое. Правда или ложь",
+        false,
+        "easy"
+    )
+    val question3 = Question<Int>(
+        "Сколько дней между полнолуниями?",
+        28,
+        "hard"
+    )
+    println(question1.answer)
+    println(question2.answer)
+    println(question3.answer)
+
+
+
+
 }
