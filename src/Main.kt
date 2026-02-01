@@ -1,4 +1,4 @@
-fun main() {
+class Quiz {
     val question1 = Question<String>(
         "Речка спятила с ума - По домам пошла сама. ___",
         "Водопровод",
@@ -14,10 +14,14 @@ fun main() {
         28,
         Difficulty.HARD
     )
-    println(question1.answer)
-    println(question2.answer)
-    println(question3.answer)
-    println(question1.toString())
+    companion object StudentProgress {
+        var total: Int=10
+        var aswered: Int=3
+    }
+}
+
+fun main() {
+    println("${Quiz.aswered} of ${Quiz.total} aswered")
 
 
 
